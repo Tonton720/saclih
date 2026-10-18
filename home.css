@@ -93,3 +93,116 @@ button a{
 a{
     color: #fff;
 }
+
+
+/* Mobile responsiveness only */
+* {
+    box-sizing: border-box;
+}
+
+.bg-video {
+    max-width: 100%;
+}
+
+/* Tablets and mobile phones */
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .list {
+        width: 100%;
+    }
+
+    .list ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .list ul li {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .logout {
+        padding: 6px;
+    }
+
+    .main {
+        width: 100%;
+        min-height: 100vh;
+        min-height: 100dvh;
+        height: auto;
+        padding: 30px 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .content h1 {
+        font-size: clamp(2.2rem, 8vw, 3.5rem);
+        overflow-wrap: anywhere;
+    }
+
+    .content p {
+        font-size: clamp(1.2rem, 5vw, 1.8rem);
+        line-height: 1.5;
+    }
+
+    button {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 10px 15px;
+    }
+
+    button a {
+        font-size: 18px;
+    }
+
+    .bg-video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Small mobile phones */
+@media screen and (max-width: 380px) {
+
+    .list ul li {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1.1rem;
+    }
+
+    button a {
+        font-size: 16px;
+    }
+
+    .main {
+        padding: 25px 12px;
+    }
+}
