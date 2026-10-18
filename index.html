@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="form-container">
-    <form onsubmit="validateForm()">
+    <form onsubmit="return validateForm(event)">
         <h1>Log in</h1>
       
         <div class="container">
@@ -28,23 +28,22 @@
       </form>
       </div>
       <script>
-        function validateForm(){
-          event.preventDefault();
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
+          function validateForm(event) {
+    event.preventDefault();
 
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
 
-            if(username === "Hilton" && password === "12345678"){
-                window.location.href = "home.html";
-                return false;
-            }
-            else{
-                alert("invalid username or password");
-                return false;
-            }
-
-        }
+    if (username === "Hilton" && password === "12345678") {
+        window.location.href = "home.html";
+        return false;
+    } else {
+        alert("invalid username or password");
+        return false;
+    }
+}
       </script>
+        
       
 </body>
 </html>
