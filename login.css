@@ -48,3 +48,34 @@ form {
     background-position: center;
     background-size: cover;
   }
+
+/* Mobile responsiveness only */
+@media screen and (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+        min-height: 100vh;
+        min-height: 100dvh;
+    }
+
+    form {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        margin-left: 0;
+        display: block;
+        margin: 15px auto 0;
+    }
+}
+
