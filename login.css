@@ -98,3 +98,84 @@ form {
     background-position: center;
     background-size: cover;
   }
+
+/* Responsive login form */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+/* Keep your original background design */
+.form-container {
+    min-height: 100vh;
+    min-height: 100dvh;
+    height: auto;
+    padding: 20px;
+}
+
+/* Prevent the form from overflowing */
+form {
+    width: 100%;
+    max-width: 450px;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+/* Make the login button responsive */
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    margin: 20px auto 0;
+    cursor: pointer;
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    form h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        max-width: none;
+        margin: 20px 0 5px;
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
