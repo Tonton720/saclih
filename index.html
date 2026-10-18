@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="form-container">
-    <form onsubmit="return validateForm(event)">
+    <form onsubmit="validateForm()">
         <h1>Log in</h1>
       
         <div class="container">
@@ -28,7 +28,7 @@
       </form>
       </div>
       <script>
-          function validateForm(event) {
+          function validateForm() {
     event.preventDefault();
 
     const username = document.getElementById("username").value;
